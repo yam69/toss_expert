@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WORLD TOSS FIXER™</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+
+background:#edf2f7;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+min-height:100vh;
+
+padding:15px;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:420px;
+
+background:#fff;
+
+border-radius:22px;
+
+overflow:hidden;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+.header{
+
+background:#229ED9;
+
+padding:20px;
+
+text-align:center;
+
+color:#fff;
+
+}
+
+.logo{
+
+width:82px;
+
+height:82px;
+
+border-radius:50%;
+
+border:3px solid #fff;
+
+object-fit:cover;
+
+background:#fff;
+
+}
+
+.title{
+
+font-size:24px;
+
+font-weight:700;
+
+margin-top:10px;
+
+}
+
+.members{
+
+font-size:14px;
+
+margin-top:6px;
+
+opacity:.95;
+
+}
+
+.content{
+
+padding:18px;
+
+}
+
+.timer{
+
+text-align:center;
+
+font-size:16px;
+
+font-weight:700;
+
+color:#229ED9;
+
+margin-bottom:14px;
+
+}
+
+.item{
+
+display:flex;
+
+align-items:center;
+
+padding:10px 0;
+
+font-size:15px;
+
+border-bottom:1px solid #ececec;
+
+}
+
+.icon{
+
+width:28px;
+
+font-size:18px;
+
+}
+  .join{
+
+display:block;
+
+margin-top:18px;
+
+background:#229ED9;
+
+color:#fff;
+
+text-decoration:none;
+
+text-align:center;
+
+padding:15px;
+
+font-size:17px;
+
+font-weight:700;
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.join:hover{
+
+background:#1688bf;
+
+}
+
+.stats{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:15px;
+
+gap:8px;
+
+}
+
+.box{
+
+flex:1;
+
+background:#f5f5f5;
+
+border-radius:12px;
+
+padding:10px;
+
+text-align:center;
+
+}
+
+.box h3{
+
+color:#229ED9;
+
+font-size:18px;
+
+}
+
+.box p{
+
+font-size:12px;
+
+color:#777;
+
+margin-top:4px;
+
+}
+
+.footer{
+
+text-align:center;
+
+font-size:12px;
+
+color:#777;
+
+margin-top:15px;
+
+line-height:1.5;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<img src="IMG-20260723-WA0003.jpg" class="logo">
+
+<div class="title">
+WORLD TOSS FIXER™ ✔️
+</div>
+
+<div class="members">
+50K+ Members
+</div>
+
+</div>
+
+<div class="content">
+
+<div class="timer">
+⏳ Ends in <span id="timer">30</span>s
+</div>
+
+<div class="item">
+<div class="icon">🏏</div>
+<div>Professional Cricket Analysis</div>
+</div>
+
+<div class="item">
+<div class="icon">📊</div>
+<div>Live Match Updates</div>
+</div>
+
+<div class="item">
+<div class="icon">⚡</div>
+<div>Expert Match Insights</div>
+</div>
+
+<div class="item">
+<div class="icon">👥</div>
+<div>Trusted Sports Community</div>
+</div>
+
+<div class="stats">
+
+<div class="box">
+<h3>50K+</h3>
+<p>Members</p>
+</div>
+
+<div class="box">
+<h3>24×7</h3>
+<p>Updates</p>
+</div>
+
+</div>
+
+<a class="join"
+href="https://t.me/+5UR0zQK8yZ00Y2Vl"
+target="_blank">
+
+📲 JOIN TELEGRAM
+
+</a>
+
+<div class="footer">
+Secure • Fast • Free
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let t=30;
+
+let telegramLink="https://t.me/+5UR0zQK8yZ00Y2Vl";
+
+let countdown=setInterval(function(){
+
+if(t>0){
+
+t--;
+
+document.getElementById("timer").innerHTML=t;
+
+}else{
+
+clearInterval(countdown);
+
+window.location.href=telegramLink;
+
+}
+
+},1000);
+
+</script>
+
+</body>
+
+</html>
